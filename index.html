@@ -1,25 +1,58 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
-    <head>
-    
-<title>"Calculator"</title>
-<script src="Calculator.js">
-  </script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="index.css">
 
-
-
-<link rel = "stylesheet" href="style.css">
 </head>
-   <body>
-    <div class="main">
 
-
-
-    </div>
-   </body> 
-
+<body>
+    <table class="calculator">
+        <Thead>
+            <tr>
+                <th colspan="4" ><input type="number" id="input" placeholder="Enter the number"></th>
+            </tr>
+            <tr>
+                <th colspan="4" id="ans">Ans =</th>
+            </tr>
+        </Thead>
+        <Tbody>
+            <tr>
+                <td colspan="2"><button id="equal" onclick="equal()">=</button></td>
+                <td colspan="2"><button id="reset" onclick="reset()">reset</button></td>
+            </tr>
+            <tr>
+                <td><button class="Number1">1</button></td>
+                <td><button class="Number2">2</button></td>
+                <td><button class="Number3">3</button></td>
+                <td><button class="add" onclick="add()"> + </button></td>
+            </tr>
+            <tr>
+                <td><button class="Number4">4</button></td>
+                <td><button class="Number5">5</button></td>
+                <td><button class="Number6">6</button></td>
+                <td><button class="sub" onclick="sub()">-</button></td>
+            </tr>
+            <tr>
+                <td><button class="Number7">7</button></td>
+                <td><button class="Number8">8</button></td>
+                <td><button class="Number9">9</button></td>
+                <td><button class="multi" onclick="multi()">*</button></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="Number0"><button>0</button></td>
+                <td><button class="dot">.</button></td>
+                <td><button class="div" onclick="div()">/</button></td>
+            </tr>
+            
+        </Tbody>
+    </table>
+    <script src="deleted.js"></script>
+    <script src="index.js"></script>
+</body>
 
 
 </html>
-
